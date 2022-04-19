@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="servicemaster.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Molengo" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Mina" />
+    <style>
+        .box {
+            width: 320px;
+            height: 568px;
+            border: 1px solid #ccc;
+            margin: auto;
+            background: #E7E7E7;
+            /* 頁面陰影 */
+            border-radius: 16px;
+            box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.25);
+        }
+
+        .inlinewrap {
+            position: relative;
+            width: 298px;
+            height: 554px;
+            background: #F4F4F4;
+            box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 16px;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            margin: auto;
+            margin-top: 5px;
+        }
+
+        .arrow img {
+            position: absolute;
+            top: 29px;
+            left: 16px;
+        }
+
+        .top {
+            position: absolute;
+            margin-top: 82px;
+            margin-left: 31px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            width: 232px;
+            height: 187px;
+        }
+
+
+        .top-txt {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            font-family: 'Oswald';
+            color: #516B92;
+            /* identical to box height */
+        }
+
+        .top-input1 {
+            width: 100%;
+            color: #495580;
+            font-family: 'Oswald';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.01em;
+            font-style: normal;
+
+        }
+
+
+        .top input {
+            height: 31px;
+            width: 229px;
+            background: #EDEDED;
+            box-shadow: inset 2px 3px 4px -2px rgba(17, 17, 17, 0.31);
+            border: 0;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.0);
+            border-radius: 5px;
+        }
+
+        .top-input2 {
+            width: 100%;
+            color: #495580;
+            font-family: 'Oswald';
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.01em;
+            font-style: normal;
+        }
+
+        .forget {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .txt-forget {
+            font-style: normal;
+            font-weight: 400;
+            transform: scale(0.6);
+            line-height: 13px;
+            letter-spacing: -0.01em;
+            font-family: 'Oswald';
+            color: #495580;
+        }
+
+        .btnbox {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            
+            position: absolute;
+            margin-top: 300px;
+            margin-left: 32px;
+            width: 229px;
+            height: 131px;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+        }
+
+        .btnbox input {
+            line-height: 0;
+            border: 0;
+            outline: 0;
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+
+        .login-btn {
+            height: 29px;
+            background: #495580;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.28);
+            border-radius: 5px;
+            width: 229px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .register-btn {
+            height: 29px;
+            background: #495580;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.28);
+            border-radius: 5px;
+            width: 229px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .bottom-txt {
+            margin: auto;
+            width: 83px;
+            height: 16px;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 125.7%;
+            letter-spacing: 0.035em;
+            color: #949494;
+            
+            /* or 14px */
+        }
+            
+        .socialmedia_icon{
+            position: absolute;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            margin-top: 445.23px;
+            width: 100%;
+        }
+        .bottom_icon{
+            display: flex;
+            justify-content: center;
+          width: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="inlinewrap">
+            <div class="arrow"><a href="servicemaster.html"><img src="02註冊頁面-Icon\path (1).png" alt=""></a></div>
+            <div class="top">
+
+                <div class="top-txt">登入</div>
+                <div class="top-input1">手機號碼/Email <input type="text" placeholder="輸入手機號碼"> </div>
+                <div class="top-input2">密碼 <input type="text" placeholder="輸入密碼"> </div>
+
+                <div class="forget">
+                    <div class="txt-forget">Forget?</div>
+                </div>
+
+            </div>
+
+
+
+            <div class="btnbox">
+                <div class="login-btn">
+                    <div class="txt">登入</div> <input type="submit" value="submit">
+                </div>
+                <div class="register-btn">
+                    <div class="txt">立即註冊</div> <input type="submit" value="submit">
+                </div>
+                <div class="bottom-txt">您也可以透過...</div>
+
+
+            </div>
+
+            <div class="socialmedia_icon">
+                <div class="item"><img src="02註冊頁面-Icon\Group 79.png" alt=""></div>
+                <div class="item"><img src="02註冊頁面-Icon\Group 78.png" alt=""></div>
+                <div class="item"><img src="02註冊頁面-Icon\Group 77.png" alt=""></div>
+                <div class="bottom_icon"><img src="02註冊頁面-Icon\Group 86.png" alt=""></div>
+            </div>
+
+           
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

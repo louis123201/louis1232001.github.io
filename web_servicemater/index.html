@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="servicemaster.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Molengo" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Mina" />
+
+    <style>
+        .box {
+            width: 320px;
+            height: 919px;
+            margin: auto;
+            border: 1px solid #ccc;
+        }
+
+        .banner {
+            width: 100%;
+            display: flex;
+        }
+
+        .banner_icon1 {
+            margin-left: 25px;
+            margin-top: 43px;
+        }
+
+        .banner_icon2 {
+            margin: auto;
+        }
+
+        .banner_icon3 {
+            margin-top: 41px;
+            margin-right: 17px;
+        }
+
+
+        .search_bar {
+            width: 100%;
+            margin-top: 11.63px;
+        }
+
+        .search_bar_box {
+            width: 285px;
+            height: 172px;
+            background-color: #7DA0FB;
+            margin: auto;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .search_bar_box .img {
+            position: absolute;
+            top: 17px;
+            right: 27px;
+            bottom: 91px;
+            left: 180px;
+            transform: matrix(0.96, 0.29, -0.28, 0.96, 0, 0);
+
+        }
+
+        .txt_line1::first-letter {
+            font-size: 24px;
+        }
+
+        .txt_line1 {
+            position: absolute;
+            width: 24px;
+            height: 36px;
+            font-family: 'Oswald';
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            letter-spacing: 0.095em;
+            line-height: 48px;
+            top: 32px;
+            left: 32px;
+            right: 229px;
+            bottom: 104px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .txt_line2 {
+            width: 200px;
+            position: absolute;
+            font-family: 'Oswald';
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.095em;
+            line-height: 36px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            top: 42px;
+            left: 61px;
+            bottom: 72px;
+            right: 41px;
+
+
+        }
+
+
+        .search-bottom {
+
+            font-family: 'Molengo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            opacity: 0.6;
+            color: #9E9E9E;
+
+            position: relative;
+            top: 124.28px;
+            left: 32.31px;
+            right: 75.31px;
+            bottom: 24.17px;
+            border: 0;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0);
+            width: 177.39px;
+            height: 23.55px;
+            background: #FFFCFC;
+            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 156px;
+            z-index: 9;
+        }
+
+        .outline {
+
+            position: absolute;
+            top: 122px;
+            left: 28px;
+            right: 71px;
+            bottom: 21.89px;
+            width: 186px;
+            height: 28.11px;
+            background: #FFFCFC;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 156px;
+
+        }
+
+        .search-bottom2{
+            position: absolute;
+            top: 125.41px;
+            left: 225.26px;
+            background: #F7F7F7;
+            transform: rotate(-180deg);
+            box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.25);
+            height: 21.62px;
+            width: 21.62px;
+            border-radius: 999em;
+            z-index: 999;
+
+        }
+        .search-bottom2_outline{
+            position: absolute;
+            top: 120.15px;
+            left: 221.1px;
+            width: 31.1px;
+            height: 31.1px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+            background: #F6F6F6;
+            border-radius: 999em;
+        }
+        .mid_txt{
+            
+            font-style: normal;
+            font-family: 'Mina';
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            color: #676767;
+            width: 100%;
+            margin-top: 33px;
+            margin-bottom: 17px;
+            margin-left: 24px;
+        }
+
+        .mid_project{
+            
+            width: 285px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            
+
+        }
+        .item{
+            width: 80px;
+            height: 75px;
+            background: #F7F9FC;
+            margin-bottom: 16px;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .item img{ 
+            
+             width: 33px;
+             height: 33px;           
+             margin-top: 12px;
+         }
+        .line1_txt{
+            position: absolute;
+            margin-top: 47px;
+            font-family: 'Mina';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10px;
+            color: #5A5A5A;
+            line-height: 16px;
+        }
+        .line2_txt{
+            position: absolute;
+            margin-top: 58px;
+            font-family: 'Mina';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 7px;
+            color: #919191;
+            transform: scale(0.7);
+            
+
+        }
+        .mid_icon{
+            width: 100%;
+            display: flex;
+            justify-content:flex-end;
+            align-items: center;
+            flex-direction: column;            
+        }
+        .mid_icon img{
+            
+            width: 150px;
+            height: 130px;
+        }
+        .mid_icon_txt{
+            position: absolute;
+            top: 626px;
+            width: 98px;
+            height: 38px;
+            font-family: 'Mina';
+            font-style: normal;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.02em;
+            font-weight:700;
+            color: #754765;
+
+
+        }
+        .bottom_icon{
+            margin: auto;
+            margin-top: 17px;
+            width: 255px;
+            height: 155px;
+          
+        }
+        .icon_firstline {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+           
+        }
+        .icon_firstline img{
+            
+          
+            width: 40px;
+            height: 40px;
+        }
+        .firstline_imgtxt{
+            font-family: 'Mina';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 12px;
+            letter-spacing: 0.02em;
+            font-style: normal;
+            color: #754765;
+            
+        }
+    
+        .icon_secondline{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            
+        }
+
+        .icon_secondline img{
+            
+            
+            width: 40px;
+            height: 40px;
+
+        }
+
+        .secondline_imgtxt{
+            font-family: 'Mina';
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 12px;
+            letter-spacing: 0.02em;
+            font-style: normal;
+            color: #754765;
+        }
+        .funtion_col{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            top: 859px;
+            width: 320px;
+            height: 60px;
+            background: #F2F2F2;
+            box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        .funtion_col img{
+            width: 35px;
+            height: 38px;
+        }
+
+        .arrow1{
+        
+        position: relative;
+        top: 31px;
+    }
+        
+     
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <div class="banner">
+            <div class="banner_icon1"><img src="01首頁-Icon\Group 10.png" alt=""></div>
+            <div class="banner_icon2"><img src="01首頁-Icon\Group 66.png" alt=""></div>
+            <div class="banner_icon3"><a href="register.html"><img src="01首頁-Icon\Group 62.png" alt=""></a></div>
+        </div>
+
+
+        <div class="search_bar">
+            <div class="search_bar_box">
+                <div class="img"><img src="01首頁-Icon\coolicon.png" alt=""></div>
+                <div class="txt_line1">
+                    <p></strong>你</strong></p>
+                </div>
+                <div class="txt_line2">
+                    <p>就是自己的HR<br>把你的<strong>價值</strong>讓更多人知道</p>
+                </div>
+
+                <input class="search-bottom" type="text" placeholder="   Search..." name="Message">
+                <div class="outline"></div>
+
+                <div class="search-bottom2"></div>
+                <div class="search-bottom2_outline"></div>
+            </div>
+        </div>
+
+        <div class="mid_txt">HI Master! 你可以先看看...</div>
+        <div class="mid_project">
+            <div class="item "> <img src="01首頁-Icon\2995467.png"alt=""> <div class="line1_txt">學科/家教</div><div class="line2_txt">418位人才</div> </div>
+            <div class="item "> <img src="01首頁-Icon\Group 163.png"alt=""><div class="line1_txt">日常翻譯</div> <div class="line2_txt">918位人才</div></div>
+            <div class="item "> <img src="01首頁-Icon\3301884.png"alt=""><div class="line1_txt">活動表演</div><div class="line2_txt">108位人才</div> </div>
+            <div class="item "> <img src="01首頁-Icon\2817086.png"alt=""> <div class="line1_txt">技能導師</div> <div class="line2_txt">228位人才</div></div>
+            <div class="item "> <img src="01首頁-Icon\2970785.png"alt=""> <div class="line1_txt">平面設計</div> <div class="line2_txt">556位人才</div></div>
+            <div class="item "> <img src="01首頁-Icon\2881142.png"alt="">  <div class="line1_txt">程式設計</div><div class="line2_txt">336位人才</div></div>
+        </div>
+
+        <div class="mid_icon"><img src="01首頁-Icon\1006555.png" alt="">
+            <div class="mid_icon_txt">交易模式</div>
+        </div>
+
+
+        <div class="bottom_icon">
+           
+            
+            
+            <div class="icon_firstline">
+                
+                <div class="firstline_img"><img src="01首頁-Icon\2995467.png" alt="">
+                    <div class="firstline_imgtxt">發案者</div>
+                   </div>
+                
+                <div class="firstline_img"> <img src="01首頁-Icon\4133261.png" alt="">
+                    <div class="firstline_imgtxt">找人才</div>
+                </div>
+                <div class="firstline_img"> <img src="01首頁-Icon\4647688.png" alt="">
+                    <div class="firstline_imgtxt">待搓合</div>
+                </div>
+                <div class="firstline_img"><img src="01首頁-Icon\2031003.png" alt="">
+                <div class="firstline_imgtxt">待審稿</div>
+                </div>
+
+            </div>
+              
+            
+            <div class="icon_secondline">
+        
+            <div class="secondline_img"><img src="01首頁-Icon\2995462.png" alt="">
+                <div class="secondline_imgtxt">發案者</div>
+               </div>
+           
+
+            
+            <div class="secondline_img"><img src="01首頁-Icon\4133261.png" alt="">
+                <div class="secondline_imgtxt">待搓合</div>
+               </div>
+            
+
+            
+            <div class="secondline_img"><img src="01首頁-Icon\122641.png" alt="">
+                <div class="secondline_imgtxt">回搞中</div>
+               </div>
+            
+
+            
+            <div class="secondline_img"><img src="01首頁-Icon\2031003.png" alt="">
+                <div class="secondline_imgtxt">審稿中</div>
+               </div> 
+            </div>
+            
+        </div>
+
+       
+        
+    <div class="funtion_col">
+    <div class="funtion_icon"><img src=" 01首頁-Icon\Group 54.png " alt=""></div>
+    <div class="funtion_icon"><img src=" 01首頁-Icon\Group 54.png  " alt=""></div>
+    <div class="funtion_icon"><img src="  01首頁-Icon\Group 54.png " alt=""></div>
+    <div class="funtion_icon"><img src=" 01首頁-Icon\Group 54.png  " alt=""></div>
+    <div class="funtion_icon"><img src="01首頁-Icon\Group 54.png  " alt=""></div>
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

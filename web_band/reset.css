@@ -1,0 +1,283 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ 
+body {
+    font-family:  sans-serif;
+}
+
+.wrap {
+    width: 100%;
+
+}
+
+.container-mid {
+    width: 100%;
+}
+
+.Naber {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+
+}
+
+.Naber-txt a {
+    color: white;
+    padding: 10px;
+    margin: 10px 10px;
+    text-decoration: none;
+    line-height: 50px;
+
+}
+
+.Naber-txt a:hover {
+    background-color: rgb(192, 192, 192);
+    color: black;
+}
+
+.continer-top-pic {
+    display: inline-block;
+    position: relative;
+}
+
+.continer-top-pic img {
+    width: 100vw;
+
+}
+
+.continer-top-pic-txt {
+    position: absolute;
+    top: 1000px;
+    left: 710px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.container-article {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    color: black;
+
+
+}
+
+.container-article h1 {
+
+    font-family: monospace;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.container-article h3 {
+
+    font-family: sans-serif;
+    color: rgb(134, 133, 133);
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.container-article p {
+    font-family: sans-serif;
+    text-justify: distribute;
+    line-height: 25px;
+}
+
+.container-article-img {
+    width: 100%;
+
+}
+
+.container-article-img img {
+    margin: 100px 20px;
+}
+
+.container-bottom {
+ 
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: black;
+    margin: 100px 0px 0 0;
+}
+
+.container-tour_date{
+    margin: auto;
+    width: 50%;
+    height: 800px;
+}
+.container-tour_date-txt h1 {            
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 6px;
+    color: white;
+    text-align: center;
+    padding: 90px 0px 0px 0px  ;
+
+}
+.container-tour_date-txt p {            
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-family: sans-serif;
+    opacity: 0.5;
+
+}
+.container-tour_date-list{
+    width: 100%;
+    background-color: white;
+    
+}
+
+.container-tour_date-list1 {
+    padding: 12px 20px;
+    border: 0.5px solid rgb(180, 180, 180);
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    font-size: 15px;
+}
+.container-tour_date-list2{
+    padding: 12px 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    font-size: 15px;
+}
+.container-tour_date-list3{
+    padding: 12px 20px;
+    border: 0.5px solid rgb(180, 180, 180);
+    color: rgb(15, 15, 15);
+    opacity: 0.7;
+    font-size: 15px;
+}
+span{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.container-tour_date-country{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    
+}
+.container-tour_date-country .item{
+   
+    width: 33.33333%;
+    margin: 8px;
+    background-color: rgb(255, 255, 255);
+}
+.container-tour_date-country .item img{
+    width: 100%;
+    height: 60%;
+}
+.item-country{
+    padding: 10px;
+    font-size: 15px;
+}
+.item-date{
+    margin: 1px 10px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+ .item-content{
+    margin:  20px 10px;
+    font-size: 13px;
+    color: rgb(65, 65, 65);
+}
+.container-tour_date-country span{
+    font-size: 15px;
+    background-color: black;
+    padding: 10px;
+    margin: 10px 10px;
+}
+.container-tour_date-country span:hover{
+    background-color: rgb(173, 173, 173);
+    color: black;
+}
+.bottom-contact{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+}
+
+
+.bottom-contact-txt{
+    text-align: center;    
+
+}
+.bottom-contact h2{
+    font-family: 'Segoe UI',Arial,sans-serif;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 60px;
+}
+.bottom-contact p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.bottom-contact-form{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.bottom-contact-form .container{
+    text-align: center;
+    width: 400px;
+    
+}
+.Name{
+    padding: 8px;
+    display: inline;
+}
+.Email{
+   padding: 8px;
+   margin-bottom: 10px;
+    
+}
+.Message{
+    display:block;
+    margin: auto;
+    padding: 8px;
+    width: 350px;   
+     
+
+}
+.contact-bottom{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: none;
+    margin: 20px;
+    padding: 7px 15px;
+    background-color: black;
+    color: white;
+}
+.contact-bottom:hover{
+    background-color: rgb(177, 177, 177);
+    color: black;
+}
+.bottom-contact img{
+    margin-top: 80px;
+}
